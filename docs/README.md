@@ -8,6 +8,8 @@ You can preview the theme at http://jasonlong.github.io/cayman-theme or with rea
 
 ![](http://cl.ly/image/1T3r3d18311V/content)
 
+![]({{ site.baseurl }}/image/cian.png)
+
 # How to use it?
 
 Download the theme @ http://github.com/pietromenna/jekyll-cayman-theme/archive/master.zip
