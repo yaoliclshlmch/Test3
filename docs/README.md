@@ -1,74 +1,33 @@
+# Why tSDX?
+
+A transparent software-defined exchange (tSDX) uses Optical Express Connections (OECs) at the Internet exchange points (IXPs) to pass signals through entirely in the optical layer without digital processing. This avoids the electronic delays and high cost and energy of repeated processing in line and client transceivers, routers, and switches peering at each IXP. Keeping signals in the optical domain also provides a layer of security and privacy as the data is not processed in the digital domain.
+
 # Control architecture 
 
 ![](image/architecture.png)
 
-This is a [Jekyll][1] theme for [@jasonlong][2]'s [Cayman theme][4] on [GitHub Pages][3].
+This is an SDN-based hierarchical control architecture:
 
-Cayman is a clean, responsive theme for [GitHub Pages](https://pages.github.com). This theme is available as an option if you use the [Automatic Page Generator](https://help.github.com/articles/creating-pages-with-the-automatic-generator/) or you can copy the template and styles to use on your own.
+- Orchestrator: a global coordinator with unified resource abstraction provided to higher layer applications and users over its northbound API.
 
-You can preview the theme at http://jasonlong.github.io/cayman-theme or with real content at http://jasonlong.github.io/geo_pattern.
+- Local Controller: autonomous domain controller with the capabilities of intra-domain resource management, path computation, connection control and OSNR monitoring.
 
-![](http://cl.ly/image/1T3r3d18311V/content)
+- Agent: a device-specified element with protocol resolution and physical layer element operational control capabilities.
 
+# Key techology
 
-# How to use it?
+- Inter-domain control capability:
 
-Download the theme @ http://github.com/pietromenna/jekyll-cayman-theme/archive/master.zip
+New control mechanisms are required to implement inter-domain wavelength routing path computation/optimization and provisioning, and impairment-aware reactions and negotiations between domains based on OPM and alien wavelength performance requirements, while preserving domain autonomy and concealment. 
 
-Unzip it and use it as a regular jekyll folder.
+- Real-time signal quality monitoring mechanism:
 
-```
-$ unzip jekyll-cayman-theme-master.zip
-```
+Because optical signals are transparently exchanged, forward error correction (FEC) and associated O-E-O conversion performance monitoring are no longer available, therefore new signal quality monitoring mechanisms are needed to guarantee SLAs. Recently, in-band, real-time optical performance monitoring (OPM) methods have been developed on integrated photonic platforms that can provide affordable, per-channel, continuous optical-layer performance guarantees.
 
-Get inside the newly extracted folder
-```
-$ cd jekyll-cayman-theme-master
-```
+# Collaborators:
 
-Get the required gems
-```
-$ bundle install
-```
-
-Use it!
-
-```
-$ jekyll serve
-```
-
-For more details read about [Jekyll][1] on its web page.
-
-# Setup
-
-Some important configuration can be done in the file `_config.yml`. Please, check the Setup section in that file.
-
-
-## baseurl
-
-`baseurl` parameter is required in the case the site doesn't sit on the root of the domain. For example: http://pietromenna.github.io/jekyll-cayman-theme
-
-In the case above the baseurl should be set to "/jekyll-cayman-theme".
-
-In the case the site sits in the root, you can leave `baseurl` as empty "".
-
-# Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/pietromenn/jekyll-cayman-theme.
-
-# Development
-
-To set up your environment to develop this theme, run `bundle install`.
-
-You theme is setup just like a normal Jelyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
-
-# License
-
-This work is licensed under a [Creative Commons Attribution 4.0 International](http://creativecommons.org/licenses/by/4.0/) license.
+- The University of Arizona
+- Columbia University
+- Dublin City University
 
 ![](image/logo.png)
-
-[1]: http://jekyllrb.com/
-[2]: https://github.com/jasonlong
-[3]: http://pages.github.com/
-[4]: https://github.com/jasonlong/cayman-theme
