@@ -8,7 +8,7 @@ You can preview the theme at http://jasonlong.github.io/cayman-theme or with rea
 
 ![](http://cl.ly/image/1T3r3d18311V/content)
 
-![]({{ site.baseurl }}/image/cian.png)
+![](/image/cian.png)
 
 # How to use it?
 
