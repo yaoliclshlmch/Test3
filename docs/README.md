@@ -8,7 +8,7 @@ You can preview the theme at http://jasonlong.github.io/cayman-theme or with rea
 
 ![](http://cl.ly/image/1T3r3d18311V/content)
 
-![](https://github.com/yaoliclshlmch/Test3/tree/master/docs/image/connect.jpg)
+![](http://github.com/yaoliclshlmch/Test3/tree/master/docs/image/test.png)
 ```
 ![](/image/connect.jpg)
 ```
