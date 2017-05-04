@@ -1,4 +1,4 @@
-# Internet Exchange Point (IXP)
+# Control architecture 
 
 ![](image/architecture.png)
 
