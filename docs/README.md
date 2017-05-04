@@ -8,11 +8,11 @@ A transparent software-defined exchange (tSDX) uses Optical Express Connections 
 
 This is an SDN-based hierarchical control architecture:
 
-- Orchestrator: a global coordinator with unified resource abstraction provided to higher layer applications and users over its northbound API.
+- **Orchestrator**: a global coordinator with unified resource abstraction provided to higher layer applications and users over its northbound API.
 
-- Local Controller: autonomous domain controller with the capabilities of intra-domain resource management, path computation, connection control and OSNR monitoring.
+- **Local Controller**: autonomous domain controller with the capabilities of intra-domain resource management, path computation, connection control and OSNR monitoring.
 
-- Agent: a device-specified element with protocol resolution and physical layer element operational control capabilities.
+- **Agent**: a device-specified element with protocol resolution and physical layer element operational control capabilities.
 
 # Key techology
 
